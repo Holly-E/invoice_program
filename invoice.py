@@ -11,6 +11,7 @@ purchase_total = float(input('Enter purchase total:\t\t\t'))
 discount = discount_module.discount(customer_type, purchase_total)
 discount_percent = discount * 100
 discount_amount = purchase_total * discount
+#formatting below creates 2 decimal places
 invoice = format((purchase_total - discount_amount), '.2f')
 
 #sep="" gets rid of the space around the variable
